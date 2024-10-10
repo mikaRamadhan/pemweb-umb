@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .content{
+            background-color: aqua;
+            display: inline-block;
+            width: 500px;
+            height: auto;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container" >
+        <div class="content" style="order: 3;">
+            <h1>Ini Konten 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, rerum odit pariatur necessitatibus delectus et voluptatem architecto? Exercitationem quam, beatae corporis nam repellendus corrupti, nesciunt labore quaerat, odit expedita quidem.</p>
+        </div>
+        
+        <div style="order: 1; background-color:coral; width:200px;">
+            <h1>HELLO</h1>
+        </div>
+
+        <div class="content" style="order: 2;">
+            <h1>Ini Konten 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, rerum odit pariatur necessitatibus delectus et voluptatem architecto? Exercitationem quam, beatae corporis nam repellendus corrupti, nesciunt labore quaerat, odit expedita quidem.</p>
+        </div>
+        
+        <div class="content" style="order: 4;">
+            <h1>Ini Konten 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, rerum odit pariatur necessitatibus delectus et voluptatem architecto? Exercitationem quam, beatae corporis nam repellendus corrupti, nesciunt labore quaerat, odit expedita quidem.</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
