@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Statement Loop</title>
+    </head>
+    <body>
+        <script>
+            const score = 85;
+            day = 1;
+            let grade = '';
+
+            // IF STATEMENT 
+            /*
+            if(score >= 90 ){
+                grade = 'A';
+            }else if( score >= 80){
+                grade = 'B';
+            }else if(score >= 70){
+                grade = 'C';
+            }else if (score >= 60){
+                grade = 'D';
+            }else {
+                grade = 'E';
+            }
+            document.write('Your Grade is: '+ grade);
+            */
+
+            // SWITCH CASE
+            /*
+            switch(day){
+                case 1:
+                    grade = 'Monday';
+                    break;
+                case 2:
+                    grade = 'Tuesday';
+                    break;
+                case 3:
+                    grade = 'Wednesday';
+                    break;
+                case 4:
+                    grade = 'Thursday';
+                    break;
+                case 5:
+                    grade = 'Friday';
+                    break;
+                case 6:
+                    grade = 'Saturday';
+                    break;
+                case 7:
+                    grade = 'Sunday';
+                    break;    
+            }document.write('The Day is: '+grade);
+            */
+            document.write('<h3>For Loop</h3>');
+            for (let i=0; i<5; i++){
+                document.write('i = ' + i +'<br>');
+            }
+
+            document.write('<h3>While Loop</h3>');
+            let x = 0;
+            while(x < 5){
+                document.write('x = '+ x + '<br>');
+                x++;
+            }
+
+            document.write('<h3>Do While Loop</h3>');
+            let y = 0;
+            do{
+                document.write('y = '+ y + '<br>');
+                y++;
+            }  while(y < 5);
+        </script>
+    </body>
+</html>
+<!-- jika tipe data tidak didefinisikan maka tipe data tersebut adalah any
+    any  = tipe data apa apa saja
+    font ligatures true = untuk membuat font ligatures
+    document.write(`Your Grade is: ${grade}`); = menggunakan petik asterik `` 
+
+    PERBEDAAN SWITCH DAN IF
+    - IF MENGGUNAKAN STATEMENT & SWITCH MENGGUNAKAN EXPRESSION
+    IF = digunakan untuk multiple statement
+    SWITCH = digunakan untuk single value
+    Fall through = terjadi ketika tidak ada break dalam sebuah case, sehingga eksekusi berlanjut ke case berikutnya.
+    SWITCH CASE = cocok untuk case yang spesifik misalnya hari, bukan case yang range seperti tanggal
+-->
