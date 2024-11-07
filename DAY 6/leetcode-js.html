@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            /**
+            * @return {Function}
+            */
+            var createHelloWorld = function() {
+                
+                return function(...args) {
+                    document.write('Hello World');        
+                    
+                }
+            };
+
+
+            
+
+            const f = createHelloWorld();
+            f({}, null, 42); // "Hello World"   
+
+
+            var createCounter = function(n) {
+    
+                return function() {
+                    
+                };
+            };
+            
+            
+        </script>
+    </body>
+</html>
