@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Function JS</title>
+    </head>
+    <body>
+        <script>
+            //function
+            function sayHello(){
+                document.write("Hello Folks! <br>");
+            }
+            sayHello();
+            sayHello();
+            
+            //function with parameters
+            function sayHelloWithParams(firstName, lastName){
+                document.write('Hello ' + firstName + ' ' + lastName + '!<br>');
+            }
+            sayHelloWithParams('Rizal', 'Ramadhan');
+            sayHelloWithParams('Dave', 'Susanto');
+
+            //function with optional parameters
+            function sayHelloWithOptionalParams(firstName, lastName){
+                document.write('Hello ' + firstName + ' ' + lastName + '!<br>');
+            }
+            sayHelloWithOptionalParams('Mika', 'Ramadhan');
+            sayHelloWithOptionalParams('Imron');
+
+            //function with default parameters
+            function sayHelloWithDefaultParams(name, gender='UNKNOWN'){
+                document.write(`Register ${name}, with gender: ${gender}</br>`);
+            }
+            sayHelloWithDefaultParams('John','Male');
+            sayHelloWithDefaultParams('Jims');
+
+            // anonymous function 
+            let hello = function(name){
+                document.write(`Hello ${name} </br> `);
+            }
+            hello('Andre');
+
+
+            //function in function
+            function outerFunction(outerVariable){
+                function innerFunction(innerVariable){
+                    document.write("Outer Variable : " + outerVariable);
+                    document.write("<br>Inner Variable : " + innerVariable);
+                }
+                innerFunction("Inner");
+            }
+            outerFunction("Outer");
+            innerFunction("Inner"); // ERROR karena innerFunction hanya bisa diakses di dalam outerFunction
+
+            document.write('</br>');
+            
+            
+            // Arrow Function
+            const greet = (name) => {
+                document.write("hello, "+ name + "!");
+            };
+            greet("Charlie");
+
+            // Closure
+            function outerFunction(outerVariable){
+                return function innerFunction(innerVariable){
+                    document.write("outer variable : "+ outerVariable);
+                    document.write("<br>inner variable : "+ innerVariable);
+                };
+            }
+            const newFunction = outerFunction("outer");
+            newFunction();
+            newFunction("inner");
+
+        </script>
+    </body>
+</html>
